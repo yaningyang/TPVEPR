@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tpvepr"
+version = "1.0.0"
+description = "Relation-aware set Transformer for tissue-specific promoter eQTL prioritization"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "numpy>=2.0,<3.0",
+    "polars>=1.30,<2.0",
+    "pyarrow>=20,<25",
+    "torch>=2.6,<3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0,<10.0",
+    "ruff>=0.11,<1.0",
+]
+
+[project.scripts]
+tpvepr-preprocess = "tpvepr.preprocessing:main"
+tpvepr-prepare = "tpvepr.prepare:main"
+tpvepr-train = "tpvepr.training:main"
+tpvepr-predict = "tpvepr.predict:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

@@ -1,0 +1,13 @@
+tissue	gene_id	chr	variant_pos	ref	alt	strand	gene_start	gene_end	biotype	af	ma_samples	ma_count	pval_nominal
+Example_Tissue	ENSG_TRAIN	chr1	9800	A	G	+	10000	11000	protein_coding	0.08	42	50	1e-08
+Example_Tissue	ENSG_TRAIN	chr1	9950	C	T	+	10000	11000	protein_coding	0.15	76	93	1e-12
+Example_Tissue	ENSG_TRAIN	chr1	10030	G	A	+	10000	11000	protein_coding	0.24	116	145	1e-20
+Example_Tissue	ENSG_TRAIN	chr1	10400	T	C	+	10000	11000	protein_coding	0.05	25	30	1e-05
+Example_Tissue	ENSG_VALID	chr17	19800	A	C	+	20000	21000	lncRNA	0.09	45	55	1e-06
+Example_Tissue	ENSG_VALID	chr17	19960	C	G	+	20000	21000	lncRNA	0.18	88	104	1e-15
+Example_Tissue	ENSG_VALID	chr17	20050	G	T	+	20000	21000	lncRNA	0.29	140	170	1e-22
+Example_Tissue	ENSG_VALID	chr17	20420	T	A	+	20000	21000	lncRNA	0.04	20	24	1e-04
+Example_Tissue	ENSG_TEST	chr19	29820	A	T	+	30000	31000	protein_coding	0.07	36	43	1e-07
+Example_Tissue	ENSG_TEST	chr19	29970	C	A	+	30000	31000	protein_coding	0.16	79	96	1e-14
+Example_Tissue	ENSG_TEST	chr19	30040	G	C	+	30000	31000	protein_coding	0.27	130	159	1e-19
+Example_Tissue	ENSG_TEST	chr19	30450	T	G	+	30000	31000	protein_coding	0.03	15	18	1e-03
